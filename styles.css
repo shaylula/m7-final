@@ -1,0 +1,104 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+:root{
+    --header-fonts: 'Cinzel', sans-serif;
+    --body-fonts: 'Assistant', sans-serif;
+   
+    --dk-teal: #1a3540;
+    --md-teal: #456e73;
+    --ly-teal: #77a1a6;
+    --dk-emerald: #062626;
+    --dk-green: #164038;
+    --md-green: #365945;
+    --lt-green: #497358;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+header{
+    font-family: var(--header-fonts);
+    font-size: 18px;
+    background-image: url(swiss-valley.jpg);
+    background-repeat: no-repeat;
+    width: calc(1440px - 4rem);
+    margin: 0 auto;
+    padding: 2rem;
+    height: fit-content;
+}
+
+nav{
+    text-align: center;
+    margin-top: 14px;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: var(--md-green);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color: var(--dk-teal);
+}
+
+body{
+    box-sizing: border-box;
+    font-family: var(--body-fonts);
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+main{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: var(--md-teal);
+}
+
+img{
+    display: block;
+}
+
+p{
+    font-size: 1.75rem;
+    width: 100%;
+    max-width: 55ch;
+    align-content: center;
+    margin: 0 auto;
+}
+
+a{
+    display: block;
+    padding: 1rem;
+}
+
+.hero-image {
+    background-image: url("images/swiss-valley.jpg");
+    background-position: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--dk-green);
+}
+
+h2{
+    font-size: 2.5rem;
+    color: var(--lt-green);
+}
+
+h1, h2{
+    font-family: var(--body-fonts);
+    font-variant: small-caps;
+}
+
+footer{
+    background-color: var(--dk-emerald);
+    padding: 2rem 1rem;
+    width: calc(1440px - 2rem);
+    margin: 0 auto;
+    text-align: center;
+}
